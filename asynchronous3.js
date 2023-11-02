@@ -3,9 +3,10 @@
 // could you do that?
 // The callback function must be an arrow function, can you also explain why?
 
+const hello = () => console.log("Hello")
 function repeatHello(callback) {
-    let id = setInterval(() => console.log("Hello"), 1000);
-    setTimeout(() => clearInterval(id), 5000);
+    let id = setInterval(() => hello(), 1000);
+    setTimeout(() => clearInterval(id), 5000)
 }
-repeatHello()
+repeatHello(hello)
 //E' preferibile utilizzare un arrow function in quanto, avendo il return implicito, si semplifica di molto il codice

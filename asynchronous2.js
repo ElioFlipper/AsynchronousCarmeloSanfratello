@@ -3,7 +3,8 @@
 // The repeatHello function will have to execute the callback function with an interval of 1 second.
 // The callback function must be an arrow function.
 
+const hello = () => console.log("Hello")
 function repeatHello(callback) {
-    setInterval(() => console.log("Hello"), 1000);
+    setInterval(() => hello(), 1000);
 }
-repeatHello()
+repeatHello(hello)

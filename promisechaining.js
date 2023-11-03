@@ -33,7 +33,7 @@ function isGreater(number) {
 }
 
 LoggedIn(true)
-    .then(isGreater(5))
+    .then(isGreater(0.6))
 
     console.log(LoggedIn(isLogged))
     console.log(isGreater(5))

@@ -7,11 +7,11 @@
 
 
 const isLogged = true;
-function LoggedIn(isLogged) {
+function LoggedIn(data) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (isLogged = true) {
-                resolve((Math.random))
+            if (data === true) {
+                resolve((Math.random()))
             } else {
                 throw new Error("Not logged in")
             }
@@ -32,8 +32,6 @@ function isGreater(number) {
     })
 }
 
-LoggedIn(true)
-    .then(isGreater(0.3))
-    .catch((err) => console.error(err))
-    .finally(() => console.log("Finally we did it"))
-console.log(LoggedIn(isLogged))
+LoggedIn(isLogged)
+.then(data=>isGreater(data))
+.then(data=>console.log(data))

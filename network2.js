@@ -4,15 +4,6 @@
 // The post data must be transmitted following the compilation of a form.
 
 
-
-// fetch("https://jsonplaceholder.typicode.com/posts", {
-//     method: "POST",
-//     body: JSON.stringify({
-//         title: "Elio ce l'ha fatta",
-//         completed: true,
-//     })
-// })
-
 async function postData(url) {
     let response = await fetch(url, {
         method: "POST",
@@ -27,4 +18,3 @@ async function postData(url) {
 
 postData("https://jsonplaceholder.typicode.com/posts")
     .then((response) => console.log(response))
-    // .then((json) => console.log(json))
